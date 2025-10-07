@@ -44,7 +44,7 @@
 }
  input:focus, textarea:focus, button:focus {
      color: #171717;
-     border-bottom: 1px solid #041373;
+     border-bottom: 1px solid var(--primary-color);
 }
  .title{
      text-align: left;
@@ -64,7 +64,7 @@
      top: 0;
      width: 30px;
      height: 30px;
-     background: linear-gradient(135deg, rgb(45 62 171 / 54%) 0%, rgba(46, 202, 127, 0.01) 100%);
+     background: linear-gradient(135deg, var(--primary-color) 0%, rgba(46, 202, 127, 0.01) 100%);
      z-index: -1;
      border-radius: 30px;
 }
@@ -103,7 +103,7 @@
      background: radial-gradient(ellipse at left, rgba(197, 202, 213, 0.7) 0%, rgba(255, 255, 255, 0) 70%);
 }
  header{
-     background-color: white;
+     background-color: #ffffff9e;
      border-radius: 0 0 5px 5px;
      width: 100%;
      max-width: 540px;
@@ -145,7 +145,7 @@
      margin-top: 4px;
 }
  header nav a:hover {
-     color: #2d3eab;
+     color: var(--primary-color);
 }
  main{
      margin-top: 88px;
@@ -189,7 +189,7 @@
      left: calc(50% - 78px);
      width: 134px;
      height: 134px;
-     background: linear-gradient(135deg, rgb(45 62 171) 0%, rgba(46, 202, 127, 0.01) 100%);
+     background: linear-gradient(135deg, var(--primary-color) 0%, rgba(46, 202, 127, 0.01) 100%);
      border-radius: 100%;
 }
  .profile-name{
@@ -200,8 +200,8 @@
      margin: 0 auto 0 auto;
 }
  .profile-profession{
-     font-size: 14px;
-     color: #2d3eab;
+     font-size: 22px;
+     color: var(--primary-color);
      line-height: 14px;
      font-weight: 400;
 }
@@ -306,8 +306,8 @@
      height: 60px;
      text-align: center;
      font-size: 32px;
-     color: #2d3eab;
-     background: linear-gradient(135deg, rgb(163 173 240) 0%, rgba(46, 202, 127, 0.01) 100%);
+     color: var(--primary-color);
+     background: linear-gradient(135deg, rgb(14 116 144 / 37%) 0%, rgba(46, 202, 127, 0.01) 100%);
      border-radius: 60px;
      display: flex;
      justify-content: center;
@@ -344,7 +344,7 @@
      width: 40px;
      height: 40px;
      font-size: 26px;
-     color: #041373;
+     color: var(--primary-color);
 }
  .resume-line{
      flex: 1;
@@ -398,9 +398,6 @@
      font-weight: 300;
      text-transform: uppercase;
 }
- .skills{
-     margin-top: 50px;
-}
  .skills > div{
      display: flex;
 }
@@ -424,7 +421,7 @@
      height: 4px;
 }
  .skills > div section > div > div > div{
-     background: #041373;
+     background: var(--primary-color);
      height: 4px;
 }
  .skills h4{
@@ -445,23 +442,10 @@
      width: 40px;
      height: 40px;
      font-size: 26px;
-     color: #041373;
+     color: var(--primary-color);
 }
  main .contact{
      margin-bottom: 20px;
-}
- .contact-information{
-     display: flex;
-     flex-wrap: wrap;
-     padding: 11px 18px;
-}
- .contact-information > div{
-     width: 50%;
-     text-align: left;
-}
- .contact-information > div span{
-     font-weight: 500;
-     font-size: 13px;
 }
  @media only screen and (min-width: 540px){
      header{
@@ -470,7 +454,7 @@
 }
  @media only screen and (min-width: 1040px) {
      .selected{
-         color: #2d3eab;
+         color: var(--primary-color);
     }
      .page{
          position: absolute;
@@ -592,7 +576,7 @@
      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
  .portfolio-item:hover h4 {
-     color: #2d3eab;
+     color: var(--primary-color);
 }
  .soft-skills-list {
      list-style: none;
@@ -606,7 +590,7 @@
 }
  .soft-skills-list li::before {
      content: "•";
-     color: #041373;
+     color: var(--primary-color);
      position: absolute;
      left: 0;
      top: 0;
@@ -645,8 +629,29 @@
          background: #666;
     }
 }
+
+.contact-info {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.contact-info i {
+  color: var(--primary-color) ;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
  .contact-form {
-     max-width: 400px;
+     max-width: 453px;
      text-align: left;
      margin: 30px auto;
      padding: 20px;
@@ -676,7 +681,7 @@
 }
  .contact-form button {
      width: 100%;
-     background-color: #007bff;
+     background-color: var(--primary-color);
      color: #fff;
      padding: 12px;
      border: none;
